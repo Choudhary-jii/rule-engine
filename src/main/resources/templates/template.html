@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rule Engine</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+  <script th:src="@{/js/scripts.js}" defer></script>
+</head>
+
+<body>
+<div class="container">
+  <h1>Rule Engine</h1>
+
+  <!-- Dropdown to select task -->
+  <label for="task-select">Select Task:</label>
+  <select id="task-select" onchange="showTaskForm()">
+    <option value="" disabled selected>Select a task to perform</option>
+    <option value="createRule">Create Rule</option>
+    <option value="combineRules">Combine Rules</option>
+    <option value="evaluateRule">Evaluate Rule</option>
+    <option value="evaluateUser">Evaluate Users Table</option>
+  </select>
+
+  <!-- Input Forms (dynamically displayed based on task) -->
+  <div id="input-form">
+    <!-- Form fields will be injected here by JavaScript based on the task -->
+  </div>
+
+  <!-- Output Window -->
+  <div id="output">
+    <h2>Output</h2>
+    <pre id="output-content">The results will be displayed here...</pre>
+  </div>
+</div>
+</body>
+</html>
