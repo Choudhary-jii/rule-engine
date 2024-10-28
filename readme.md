@@ -1,3 +1,7 @@
+My current project is not working well - has some issues parsing and tokenizing the user's input. I guess the problem lies in the parser file and the service file that has the main logic of taking the data calling parser function and then after tokanizing return the AST node. I will have to work with the logics and make updates.
+So currently this project doesn't works as intended due to some logical error that needs instant fixes. This project was an assignment from a company, so after their evaluation process ends, I will commit changes asap.
+
+
 Rule Engine with Abstract Syntax Tree (AST)
 --
 * Overview
@@ -15,7 +19,6 @@ This project is a rule-based engine designed to evaluate user eligibility based 
 -> Technologies Used
 
 -> Setup and Installation
-[
 
 -> Testing
 
